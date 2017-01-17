@@ -21,5 +21,5 @@ if __name__ == '__main__':
   os.system(cmd)
 
   
-  path=os.path.join(prefix, year, month, day, "backup.sql")
+  path=os.path.join(prefix, year, month, day)
   s3.Object(bucket, path).put(Body=open('/tmp/backup.sql', 'rb'))
