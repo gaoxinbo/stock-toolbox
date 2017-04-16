@@ -7,7 +7,7 @@ import os
 bucket="gaoxinbo-db-backup"
 prefix="stock"
 
-cmd="mysqldump -uroot -p840326 stock > /tmp/backup.sql"
+cmd="mysqldump -uroot -p840326 trade > /tmp/backup.sql"
 
 if __name__ == '__main__':
   s3 = boto3.resource('s3')
